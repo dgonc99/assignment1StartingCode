@@ -2,31 +2,13 @@ package shapes;
 
 public abstract class Shape implements Comparable<Shape> {
 
-    String type;
-    double height;
-    double length;
-    String x;
+    public abstract double getHeight();
 
-    public Shape(String type, double height, double length) {
-        this.type = type;
-        this.height = height;
-        this.length = length;
-    }
+    public abstract double getBaseArea();
 
-    public String getType() {
-        return type;
-    }
+    public abstract double getVolume();
 
-    public double getHeight() {
-        return height;
-    }
-    
-
-    public double getLength() {
-        return length;
-    }
-
-    public int compareTo(Shape s) {
-        return Double.compare(this.height, s.height);
+    public int compareTo(Shape other) {
+        return Double.compare(this.getHeight(), other.getHeight());
     }
 }

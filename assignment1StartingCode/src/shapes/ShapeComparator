@@ -1,0 +1,8 @@
+package shapes;
+
+import java.util.Comparator;
+
+public class ShapeComparator {
+    public static Comparator<Shape> volumeComparator = Comparator.comparingDouble(Shape::getVolume);
+    public static Comparator<Shape> baseAreaComparator = Comparator.comparingDouble(Shape::getBaseArea);
+}
