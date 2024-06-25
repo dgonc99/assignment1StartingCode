@@ -1,3 +1,9 @@
+/* CPRG 304-C
+Assignment 1
+Team 3 - The Oopsies
+Date: 2024-06-20
+Basel Chono Campos, Dominic Goncalves, Hoang Nam Nguyen, Rocky Dagalea */
+
 package shapes;
 
 public class Pyramid extends Shape {
